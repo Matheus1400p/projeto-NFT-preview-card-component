@@ -1,0 +1,163 @@
+* {
+    font-family: 'Outfit';
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#content {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    padding: 1.5em;
+    border-radius: 15px;
+}
+
+#images {
+    position: relative;
+}
+
+.equilibrium {
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.equilibrium {
+    width: 100%;
+    display: block;
+}
+
+#images div {
+    background-color: hsla(178, 100%, 50%, 60%);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+
+#images div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#images div:hover {
+    opacity: 1;
+    cursor: pointer
+    ;
+}
+
+#description h1 {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#description h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+#description p {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+#value-date {
+    display: flex;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 10px;
+}
+
+.value {
+    display: flex;
+    margin: 0px;
+    place-items: center;
+    margin-bottom: 10px;
+}
+
+.value img {
+    width: 12px;
+}
+
+.value h2 {
+    color: hsl(178, 100%, 50%);
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.date {
+    display: flex;
+    place-items: center;
+    margin-left: auto;
+}
+
+.date p {
+    color: hsl(215, 51%, 70%);
+    margin-left: 5px;
+}
+
+.creator {
+    display: flex;
+    place-items: center;
+
+}
+
+.creator p {
+    color: hsl(215, 51%, 70%);
+    margin-left: 20px;
+}
+
+.creator strong {
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.creator strong:hover {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.creator img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 375px) {
+    
+    #content {
+        width: 285px;
+        margin: auto;
+    }
+
+    #images div {
+        width: 285px;
+        height: 285px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #content {
+        width: 250px;
+        margin: auto;
+    }
+
+    #images div {
+        width: 250px;
+        height: 250px;
+    }
+
+}
